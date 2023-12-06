@@ -1,0 +1,118 @@
+rendering row by passing component to the row's
+
+eg
+ {/* <Row
+          heading={"Enjoy on your TV"}
+          desp={
+            "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."
+          }
+          component={
+            <Row1
+              img={img}
+              video={
+                "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+              }
+            />
+          }
+        />
+
+        <Row
+          heading={"Download your shows to watch offline"}
+          desp={
+            "Save your favourites easily and always have something to watch."
+          }
+          row={true}
+          component={
+            <Row2
+              img={Mobile}
+              video={
+                "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+              }
+            />
+          }
+        />
+        <Row
+          heading={"Watch everywhere"}
+          desp={
+            "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+          }
+          component={<Row3 img={img3} video={""} />}
+        />
+
+        <Row
+          heading={"Create profiles for kids"}
+          desp={
+            "Send children on adventures with their favourite characters in a space made just for them—free with your membership."
+          }
+          row={true}
+          component={<Row4 img={img4} />}
+        /> */}
+
+Row2// t's differenc from other components that's it has defferent code 
+
+import React,{useEffect} from 'react'
+import downloadImg from "../assets/downloadIcon.gif";
+import BoxShot from "../assets/boxshot.png";
+export default function Row2({ img }) {
+
+ 
+  return (
+    <>
+      <div className="basis-1/2 relative" id='bottom'>
+              <img
+                src={img}
+                alt=""
+                />
+              <div className="flex border-2 border-zinc-500 rounded-2xl h-24 items-center box-border min-w-[15rem] absolute bottom-[8%] left-[50%] my-auto bg-black -translate-x-1/2 overflow-hidden w-[60%]">
+                <div className="shrink-0 grow-0 flex  px-3">
+                  <img
+                    className=" w-16 h-[4.7rem] object-contain"
+                    src={BoxShot}
+                    alt=""
+                    />
+                </div>
+                <div className="mr-10">
+                  <div className="font-bold">Stranger Things</div>
+                  <div className="text-blue-600">Downloading...</div>
+                </div>
+                <div
+                  className="h-12 w-12 text-white m-auto"
+                  style={{
+                    backgroundImage: `url(${downloadImg})`,
+                    backgroundSize: "cover",
+                  }}
+                  ></div>  
+              </div>
+            </div>
+    </>
+  )
+}
+
+
+row1,row3,row4 all these 3 components have similar code
+
+import React from 'react';
+
+export default function Row1({ img, video = "" }) {
+
+  return (
+    <>
+      <div className=" basis-1/2 bg-opacity-0 relative flex items-center justify-center" id='bottom'>
+          {video ? (
+            <div className="absolute z-0 le">
+              <video autoPlay loop muted className="">
+                <source className="" src={`${video}`} type="video/mp4"></source>
+              </video>
+            </div>
+          ) : (
+            <div></div>
+          )}
+
+          <div className="z-10">
+            <img className="le" src={img} alt="" />
+          </div>
+        </div>
+    </>
+  )
+}
+
