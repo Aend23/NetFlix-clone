@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 # <span style="color:#E50914">Netflix</span> Clone - Frontend
 
 https://github.com/Aend23/Netflix-Clone/assets/97446234/1996a08c-01cc-4491-b3a0-545dd99bb21c
@@ -16,7 +5,6 @@ https://github.com/Aend23/Netflix-Clone/assets/97446234/1996a08c-01cc-4491-b3a0-
 # Responsive 
 
 https://github.com/Aend23/Netflix-Clone/assets/97446234/355f0169-2e0c-44de-92b4-9cf3cae6f399
-
 
 Welcome to the Netflix Clone - Frontend project!
 This project aims to replicate the front-end experience of Netflix, allowing users to browse and interact with content seamlessly.
@@ -54,8 +42,11 @@ Screenshots
 Include screenshots or GIFs showcasing the Netflix Clone's interface, such as browsing movies, playing trailers, and the user authentication process.
 
 Technologies Used
+
 React.js
+
 Contributing
+
 Contributions are welcome! Feel free to submit pull requests to enhance the project.
 
 License
