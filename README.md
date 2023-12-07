@@ -1,7 +1,21 @@
 
 
 
+
+
+
+
+
+
+
+
 # <span style="color:#E50914">Netflix</span> Clone - Frontend
+
+https://github.com/Aend23/Netflix-Clone/assets/97446234/1996a08c-01cc-4491-b3a0-545dd99bb21c
+
+# Responsive 
+
+https://github.com/Aend23/Netflix-Clone/assets/97446234/355f0169-2e0c-44de-92b4-9cf3cae6f399
 
 
 Welcome to the Netflix Clone - Frontend project!
